@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPOTIFY</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper" style=" background-color: #51aeae;">
+                <a href="#" class="brand-logo" style="height: 100%;">
+                    <img src="assets/logo.jpg" alt="SPOTIFY" class="circle responsive-img" style="height: 100%;padding-top: 5px; padding-left: 15px;"> <!-- notice the "circle" class -->
+    
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="file:///C:/Users/nikhi/task/public/index.html">Welcome!</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   <main>
+    
+       
+        
+
+        <div class="container">
+            <h1 class="title">Spotify Music</h1>
+            <div class="row">
+                <p class="flow-text mainText">Select the music that you want to listen to!</p>
+            </div>
+              
+    <audio src="./assets/songs/1.mp3" id="mySong1"></audio>
+           <div class="row center" style="height: 150px;"> 
+            <img src="./assets/back.png" id="background" style="height: 100%;"/>
+                <img src="assets/1.jpg" id="thumb1"alt="Trending" style="height: 75%;padding-top: 5px; padding-left: 40px; border-radius: 20px;">  
+                <img src="assets/2.jpg" id="thumb2"alt="Rock"  style="height: 75%;padding-top: 5px; padding-left: 20px; border-radius: 25px;"> 
+                <img src="assets/3.jpg" id="thumb3"  style="height: 75%;padding-top: 5px; padding-left: 15px; border-radius: 20px;"> 
+                <img src="assets/4.jpg" id="thumb4"  style="height: 75%;padding-top: 5px; padding-left: 15px; border-radius: 20px;"> 
+                <img src="assets/5.jpg" id="thumb5"  style="height: 75%;padding-top: 5px; padding-left: 15px; border-radius: 20px;"> 
+                <img src="assets/6.jpg" id="thumb6"  style="height: 75%;padding-top: 5px; padding-left: 15px; border-radius: 20px;"> 
+                
+            </div>
+
+            
+        </div>
+
+        <div class="container">
+            <div class="box"></div>
+        
+  <!--<img src="./assets/1.jpg" id=img1 alt="Trending"  style="height: 20%;padding-top: 5px; padding-left: 15px; border-radius: 20px;"-->
+
+  <img src="./assets/previous.png" onclick="previousSong()" id="prev" />     
+  <img src="./assets/play.png" onclick="playbutton()" id="play-pause"/>
+
+        <img src="./assets/next.png" onclick="nextSong()" id="next" />
+        
+
+        <div class="singer">Artist 1</div>
+         <div class="song-name">Song 1</div>
+
+         <input
+         type="range"
+         id="progress-bar"
+         min="0"
+         max=""
+         value="0"
+         onchange="changeProgressBar()"
+       />
+       <div class="currentTime"></div>
+       <div class="durationTime"></div>
+         
+          
+          
+        </div>
+    
+    </main>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+          © 2020 Copyright Spotify Corp.
+          <a class="grey-text text-lighten-4 right" href="file:///C:/Users/nikhi/task/public/index.html"><img src="assets/home.svg" style="height: 15px; padding-right: 10px;"></i>Home !</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="env.js"></script>
+
+</body>
+
+</html>
